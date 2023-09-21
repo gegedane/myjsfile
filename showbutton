@@ -1,0 +1,12 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var toggleButton = document.getElementById("toggleButton");
+    var googleIframe = document.getElementById("googleIframe");
+
+    toggleButton.addEventListener("click", function() {
+        if (googleIframe.hasAttribute("hidden")) {
+            googleIframe.removeAttribute("hidden");
+        } else {
+            googleIframe.setAttribute("hidden", "true");
+        }
+    });
+});
